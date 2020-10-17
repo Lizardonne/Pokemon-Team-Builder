@@ -1,0 +1,22 @@
+header {
+}
+
+main {
+  flex: 1 0 auto;
+}
+tr {
+  display: flex;
+  justify-content: space-between;
+}
+th {
+  writing-mode: vertical-lr;
+  text-orientation: sideways;
+  text-transform: capitalize;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
