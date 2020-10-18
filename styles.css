@@ -1,22 +1,96 @@
-header {
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: Impact, Charcoal, sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+  text-decoration: none;
+  background-color: lightgray;
+}
+
+header { font-size: 2em; }
+header a {
+  width: inherit;
+  padding: 0 1em;
+  box-sizing: content-box;
 }
 
 main {
   flex: 1 0 auto;
+  width: 100%;
 }
-tr {
+
+form { width: 10vw; }
+input {
+  width: inherit;
+  text-align: left;
+}
+select { text-transform: capitalize; }
+form div {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  align-self: center;
 }
-th {
-  writing-mode: vertical-lr;
-  text-orientation: sideways;
-  text-transform: capitalize;
+
+table {
+  width: inherit;
+  border-spacing: 0;
+  background-color: lightgray;
 }
+thead tr { background-color: lightblue; }
+tbody tr:hover { background-color: white; }
+th, td { padding: 0.25em 0; }
+th { text-transform: capitalize; }
+td { border-bottom: 1px solid gray; }
+
+.resist { background-color: lightgreen; }
+.super-resist { background-color: green; }
+.weak { background-color: pink; }
+.super-weak { background-color: red; }
+.no-effect { background-color: gray; }
+
+.weak-total { background-color: pink; }
+.resist-total { background-color: lightgreen; }
 
 footer {
   position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
+
+  background-color: lightblue;
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+footer a { padding: 1em; }
+
+@media only screen and (min-width: 961px) {
+  html {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  body { width: 960px; }
+
+  form div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+  select { width: 40%; }
 }
