@@ -42,6 +42,7 @@ form div {
 table {
   width: inherit;
   border-spacing: 0;
+  margin-bottom: 4em;
   background-color: lightgray;
 }
 thead tr { background-color: lightblue; }
