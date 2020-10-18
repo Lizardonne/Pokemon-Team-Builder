@@ -1,5 +1,5 @@
-# Pokemon Search Engine
- Search engine powered by PokeAPI
+# Pokemon Team Type Calculator
+Team builder powered by PokeAPI
 
 # CS 260
 For this lab, you will create a website that uses HTML, CSS, and JavaScript. This website can be for anything you want, but should not be similar to previous labs. You must create your own original work.

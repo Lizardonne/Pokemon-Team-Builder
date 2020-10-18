@@ -5,11 +5,6 @@
   text-align: center;
   font-family: Impact, Charcoal, sans-serif;
 }
-body {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 a {
   color: black;
@@ -22,15 +17,14 @@ a:hover {
 }
 
 header { font-size: 2em; }
-header a {
-  width: inherit;
-  padding: 0 1em;
-  box-sizing: content-box;
-}
+header a { box-sizing: content-box; }
 
 main {
   flex: 1 0 auto;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 form { width: 10vw; }
@@ -74,8 +68,12 @@ footer {
   background-color: lightblue;
 
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
+}
+footer div {
+  display: flex;
+  justify-content: flex-end;
 }
 footer a { padding: 1em; }
 
@@ -85,12 +83,25 @@ footer a { padding: 1em; }
     flex-direction: column;
     align-items: center;
   }
-  body { width: 960px; }
+  body, header, footer div { width: 960px; }
 
+  header { padding: 1em; }
+  header a { padding: 0.75em; }
+
+  form {
+    width: 100%;
+  }
+  input {
+    width: inherit;
+    text-align: center;
+  }
   form div {
     display: flex;
     flex-direction: row;
     justify-content: center;
   }
   select { width: 40%; }
+
+  thead th, .row-header { padding: 0 1em; }
+  .row-header { text-align: right; }
 }
